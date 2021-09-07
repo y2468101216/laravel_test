@@ -3,11 +3,13 @@
 namespace Tests\Feature;
 
 use App\Models\Post;
+use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
 class CommentTest extends TestCase
 {
+    use DatabaseTransactions;
     /**
      * A basic test example.
      *
